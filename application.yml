@@ -6,7 +6,6 @@ spring:
         url: jdbc:mysql://120.78.192.139:3306/zpp_user?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
         username: '{cipher}1b7f169c19fab455cf73d900d8382f33e28b56d703f6208fab5959904e9a558b'
         password: '{cipher}6bf2fcd919ff06a8cdf5cc5c094f5ec8dcf89bfdc60db92dffcaec196effeaaebd25e0aad28d2ab6d73762c0b42a148461f2ed399f0d8e3b69a77c960ef554ed‘
-#         使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         filters: stat
