@@ -1,1 +1,49 @@
-333d4b459804567240075c4ae3dca6b6e07553e2059d87b20905dadcc3e1476252dcf61191403c7126b2611d5237e5842be6f241b7970e177db6ca85940f88da2caaaafbb07a086e855f706e6c883fd77e54a55bf837006f470c9e99837104262158d426cdb2212fdd99e584e9c45e0eef7dc02be2445385d4ffcdfeee3950019ab2c4a76c00e30afa904673973a7875de3e4bea8fc686ba31156a0b701bb576e20112ebcc010c40a64585352f8dfa6bbcbc299f8eb4dc5b129cabccb4b1c14729c379a8d92bef46855f9a7e1e3df66a5ccc32007048c9fffe0a91bbeb10e8199441c2ba56aea31c5122f86b31bf04f6073bfd9fa6c298360afbc33d76865b5a9c80d8adafd1cf06348761f05e43798d26c7fb3c2031e0974b49cd2fc2476c22a0f826f8c414077c96192c9b17efbd8287bf98b7f3b7ebefaed89cf4ddb5b0a60d4c1ed20afbecbe7486eecde649e99f7e08acc3ce5a4ac8cab8e9727bfee4d95b3708a1c3c2d2134f8cef93ccc95b35c2da3b44f32610e66cd8399c5d17908abd6b2b7f3d73edeb67b93244727bfb9df4124ae26855272010995f6505eec001a8c0d8a129b6d3fd4b4f903a3f23ae302e8f176774343e9e4b2325767507e450d49ad3e1f2cb9563ae665518a9eec11c9cf9899be21777b0cdc0c4be4c74c32998ca467b0820f9f00d57cddfd2ad802fb78ad281f8eefb7bed3bb307b4e74368df7a55b41a4f0518a0f8d68a84705f049296fa0f2bfc84c5a23b8942718ad20c3f3bbc81e7b20407af18ccc1751db22aabcc1a07c414bdd68352d057a5fb44c443aa5da1676a9c5d10e3a9261da14d7abb3198186be7db1c066e8b1d97e619f36e43bd15c8b8c126bb779debdbef4fe98d6bc503e262bd36e0efc18e9e0da79b018babf478fe47bfca3cc7b01fa27e2d7587437ceaa389d370dd0edee7c5241ba203ac0a6e064f5057743693964c814f6fdf2c73c784348476fb0cc9739a19cf725149275e3b0757d92e696a2ad42b717a8e459ffab9b5f5e900c33c37f6f712d444b38fd5ea2ed1fb481f5f2bf45760d41e5b4808ba39cec8fe36da9765e17b6d3891744f120aebb0d10399eb8d81ee3cb6ddf50974d62de2d2b5c984f8707785dd910a1949ba408ead63698537de9d56976e4e52daa4b2b04941788fc45224f4e4f22a54e6050880c738d3d57d3f7470e92e1f9b925a7c1104e6a71be13b4967f9567a8d9e3f6fdf549aaa055a3f1b058f30a8a2caf7536100804afc9dfd97ee5511edd9b773015550fb77adfb4e64feda414f8b6ddb9067dff17fbebf5bf410d9754cf1411fbbf091001bea477e9c769b4fcefbd0f9adba8c84d71f422ba219236c1c03df85cd5d22c3839d633d0745468447eee54cd23c84abd3aa32c045cc618cd3e5309ef940e0437f522102605be152b6fb9bef3ef837a12d0e19ce013f23e2325fee47abb3c19da67d7ee520b67905ff06de486c6da268a14f3c014761219ecbd3e65bfe6843d08b894960acfd28c12a018ac38c7541c4291de16201accf71b608eb4c58e64215a72976868990316f273679f28453cda1870c4fc990ea6c6593e021adccb8d03a1f164951cfae9a1d81e20645936717ba260ddfdc392d6c2914ec1b854cf8e4eccf4d5fd12fe8d8dc39692426adebd9ae11fd8f9e1dfd3f3aef845e973592de765b685593ce1a49b06218007de624c0523435466294c73e9e6d908256e39554b7e76063061113f14e95e549ffeb227506ab8166b33448a760cbf8a64b8e3cd024a7eb2489257ab281479015c6f27b4183a9bc3aaae97c6b0c0b4d473dfbc9db8ae45e5aa17bc5f4e392463c0a4ba58a5949cc012cb1a4bd7f1e7546fdac44e5e94a3e6f109d23c3acd201d8070cf4c8bae300128d011dbc12c514ff25f3777c1edb8206dc4747d899275caf195a95c88c12e714eb5f7d07393a99bd4c7a30b60866e0158406
+#票据模块
+platId: 4
+spring:
+    datasource:
+        name: orcl
+        url: jdbc:mysql://120.78.192.139:3306/zpp_user?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+        username: '{cipher}1b7f169c19fab455cf73d900d8382f33e28b56d703f6208fab5959904e9a558b'
+        password: '{cipher}6bf2fcd919ff06a8cdf5cc5c094f5ec8dcf89bfdc60db92dffcaec196effeaaebd25e0aad28d2ab6d73762c0b42a148461f2ed399f0d8e3b69a77c960ef554ed‘
+#         使用druid数据源
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 1 from dual
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+#pagehelper分页插件
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+logging:
+    file: logs/note-manager.log
+    level:
+        root: INFO
+        tk.mybatis: TRACE
+        com.basedata: DEBUG
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 20000
+        readTimeout: 20000
+        loggerLevel: basic
+feign.hystrix.enabled: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 20000
