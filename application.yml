@@ -30,13 +30,6 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
 
-logging:
-    file: logs/note-manager.log
-    level:
-        root: INFO
-        tk.mybatis: TRACE
-        com.basedata: DEBUG
-
 feign:
   client:
     config:
