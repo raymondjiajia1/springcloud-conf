@@ -3,9 +3,9 @@ platId: 4
 spring:
     datasource:
         name: orcl
-        url: jdbc:mysql://118.25.46.249:3306/zpp_user?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+        url: jdbc:mysql://39.108.237.30:3306/zpp_user?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
         username: '{cipher}1b7f169c19fab455cf73d900d8382f33e28b56d703f6208fab5959904e9a558b'
-        password: '{cipher}391b6727481d920a142e82cf3af3b8c3c7a9d47eaf245af4e64d537dfdb78a7dc88a7a7c8eea5e9d8b0cd9c51595d3678b10caa205023f46d5463086cea0ebb1'
+        password: '{cipher}1a94a32cf2e3ccaae92731e081229033a4ca045cb5bc40df823e6e61d79ac830f001517327490a50580f81f3348573cb'
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         filters: stat
